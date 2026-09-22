@@ -6,6 +6,8 @@
 
 Follow one synthetic project through a forecast discrepancy, the evidence supporting it, remediation review, and the recorded close decision. The demonstration makes the path behind the headline inspectable.
 
+![Synthetic forecast discrepancy with its supporting evidence](assets/showcase.png)
+
 ## A three-minute review
 
 1. Start in **Overview** and select **Start guided demonstration**.

@@ -1,0 +1,311 @@
+{
+  "bundleId": "synthetic-close-may-june-2026",
+  "disclosures": {
+    "contractualCertification": false,
+    "localStatic": true,
+    "productionConnected": false,
+    "releasedSaas": false,
+    "sanitized": true,
+    "statements": [
+      "All project, actor, period, finding, evidence, and workflow records are synthetic.",
+      "The bundle is sanitized and contains no original source document content.",
+      "The showcase is a local/static viewer and is not connected to a production environment.",
+      "The showcase is not a released SaaS product.",
+      "The displayed result is not contractual certification.",
+      "The local viewer calls no model, telemetry service, or external system."
+    ],
+    "synthetic": true
+  },
+  "evidence": [
+    {
+      "displayOrder": 1,
+      "id": "synthetic-evidence-reported-eac",
+      "kind": "sanitized_metric",
+      "reference": "June 2026 current · submitted position",
+      "summary": "USD 128,100,000 in the maintained synthetic scenario.",
+      "title": "Submitted EAC"
+    },
+    {
+      "displayOrder": 2,
+      "id": "synthetic-evidence-actual-cost",
+      "kind": "sanitized_metric",
+      "reference": "June 2026 current · governed component",
+      "summary": "USD 76,000,000 in the maintained synthetic scenario.",
+      "title": "Actual cost (AC)"
+    },
+    {
+      "displayOrder": 3,
+      "id": "synthetic-evidence-estimate-to-complete",
+      "kind": "sanitized_metric",
+      "reference": "June 2026 current · governed component",
+      "summary": "USD 56,800,000 in the maintained synthetic scenario.",
+      "title": "Estimate to complete (ETC)"
+    },
+    {
+      "displayOrder": 4,
+      "id": "synthetic-evidence-defensible-eac",
+      "kind": "derived_metric",
+      "reference": "June 2026 current · AC plus ETC",
+      "summary": "USD 132,800,000 reconstructed from the two sanitized components.",
+      "title": "Defensible EAC"
+    }
+  ],
+  "findings": [
+    {
+      "displayOrder": 1,
+      "evidenceIds": [
+        "synthetic-evidence-reported-eac",
+        "synthetic-evidence-actual-cost",
+        "synthetic-evidence-estimate-to-complete",
+        "synthetic-evidence-defensible-eac"
+      ],
+      "id": "synthetic-finding-forecast-contradiction",
+      "impact": {
+        "label": "Deterministic forecast gap",
+        "unit": "USD",
+        "value": 4700000
+      },
+      "linkedMovementIds": [
+        "synthetic-movement-reported-eac",
+        "synthetic-movement-defensible-eac",
+        "synthetic-movement-forecast-gap"
+      ],
+      "severity": "blocker",
+      "status": "remediation_required",
+      "summary": "Submitted EAC is USD 128,100,000 while AC plus ETC reconstructs to USD 132,800,000, a USD 4,700,000 contradiction.",
+      "title": "Submitted EAC contradicts AC plus ETC"
+    }
+  ],
+  "limitations": [
+    "This viewer presents a precomputed synthetic scenario; it does not ingest or analyze source files.",
+    "Sanitized evidence summaries do not establish the truth, completeness, approval, or contractual status of any real close.",
+    "Local showcase interactions do not update a production or governed record.",
+    "Synthetic actor labels are not authentication or identity proof.",
+    "The displayed workflow is illustrative and is not cryptographically signed, externally witnessed, or tamper-proof."
+  ],
+  "movements": [
+    {
+      "current": 128100000,
+      "delta": 3700000,
+      "direction": "increase",
+      "displayOrder": 1,
+      "id": "synthetic-movement-reported-eac",
+      "label": "Reported EAC",
+      "linkedFindingIds": [
+        "synthetic-finding-forecast-contradiction"
+      ],
+      "material": true,
+      "prior": 124400000,
+      "summary": "Submitted estimate at completion increased by USD 3,700,000.",
+      "unit": "USD"
+    },
+    {
+      "current": 132800000,
+      "delta": 8400000,
+      "direction": "increase",
+      "displayOrder": 2,
+      "id": "synthetic-movement-defensible-eac",
+      "label": "Defensible EAC",
+      "linkedFindingIds": [
+        "synthetic-finding-forecast-contradiction"
+      ],
+      "material": true,
+      "prior": 124400000,
+      "summary": "AC plus ETC increased by USD 8,400,000.",
+      "unit": "USD"
+    },
+    {
+      "current": 4700000,
+      "delta": 4700000,
+      "direction": "increase",
+      "displayOrder": 3,
+      "id": "synthetic-movement-forecast-gap",
+      "label": "Deterministic Forecast Gap",
+      "linkedFindingIds": [
+        "synthetic-finding-forecast-contradiction"
+      ],
+      "material": true,
+      "prior": 0,
+      "summary": "The current submitted EAC is USD 4,700,000 below AC plus ETC.",
+      "unit": "USD"
+    }
+  ],
+  "project": {
+    "description": "A maintained synthetic project-controls scenario for a deterministic local showcase.",
+    "id": "synthetic-project-north-line",
+    "name": "Synthetic North Line Expansion",
+    "periods": [
+      {
+        "displayOrder": 1,
+        "id": "synthetic-period-2026-05",
+        "label": "May 2026 baseline",
+        "reportingDate": "2026-05-31",
+        "status": "review"
+      },
+      {
+        "displayOrder": 2,
+        "id": "synthetic-period-2026-06",
+        "label": "June 2026 current",
+        "reportingDate": "2026-06-30",
+        "status": "blocked"
+      }
+    ],
+    "selectedCurrentPeriodId": "synthetic-period-2026-06",
+    "selectedPriorPeriodId": "synthetic-period-2026-05"
+  },
+  "scenario": {
+    "generatedAt": "2026-07-01T12:00:00.000Z",
+    "id": "synthetic-scenario-forecast-contradiction",
+    "title": "Synthetic forecast contradiction and blocked close"
+  },
+  "schema": "schroedingers-close/showcase@1",
+  "workflow": {
+    "actors": [
+      {
+        "displayOrder": 1,
+        "id": "synthetic-actor-preparer",
+        "label": "Synthetic Preparer",
+        "role": "preparer"
+      },
+      {
+        "displayOrder": 2,
+        "id": "synthetic-actor-reviewer",
+        "label": "Synthetic Reviewer",
+        "role": "reviewer"
+      },
+      {
+        "displayOrder": 3,
+        "id": "synthetic-actor-approver",
+        "label": "Synthetic Approver",
+        "role": "approver"
+      }
+    ],
+    "currentDecision": "Blocked at 2026-07-01T09:40:00.000Z after the remediation evidence remained unreconciled.",
+    "decision": "blocked",
+    "events": [
+      {
+        "actorId": "synthetic-actor-preparer",
+        "evidenceIds": [],
+        "findingId": null,
+        "id": "synthetic-event-001",
+        "occurredAt": "2026-07-01T09:00:00.000Z",
+        "reason": "Synthetic Preparer registered for the deterministic local showcase.",
+        "sequence": 1,
+        "type": "actor_registered"
+      },
+      {
+        "actorId": "synthetic-actor-reviewer",
+        "evidenceIds": [],
+        "findingId": null,
+        "id": "synthetic-event-002",
+        "occurredAt": "2026-07-01T09:05:00.000Z",
+        "reason": "Synthetic Reviewer registered for the deterministic local showcase.",
+        "sequence": 2,
+        "type": "actor_registered"
+      },
+      {
+        "actorId": "synthetic-actor-approver",
+        "evidenceIds": [],
+        "findingId": null,
+        "id": "synthetic-event-003",
+        "occurredAt": "2026-07-01T09:10:00.000Z",
+        "reason": "Synthetic Approver registered for the deterministic local showcase.",
+        "sequence": 3,
+        "type": "actor_registered"
+      },
+      {
+        "actorId": "synthetic-actor-reviewer",
+        "evidenceIds": [
+          "synthetic-evidence-reported-eac",
+          "synthetic-evidence-actual-cost",
+          "synthetic-evidence-estimate-to-complete",
+          "synthetic-evidence-defensible-eac"
+        ],
+        "findingId": "synthetic-finding-forecast-contradiction",
+        "id": "synthetic-event-004",
+        "occurredAt": "2026-07-01T09:15:00.000Z",
+        "reason": "Synthetic reviewer assigned the forecast contradiction for evidence review.",
+        "sequence": 4,
+        "type": "finding_assigned"
+      },
+      {
+        "actorId": "synthetic-actor-reviewer",
+        "evidenceIds": [
+          "synthetic-evidence-reported-eac",
+          "synthetic-evidence-actual-cost",
+          "synthetic-evidence-estimate-to-complete",
+          "synthetic-evidence-defensible-eac"
+        ],
+        "findingId": "synthetic-finding-forecast-contradiction",
+        "id": "synthetic-event-005",
+        "occurredAt": "2026-07-01T09:20:00.000Z",
+        "reason": "Synthetic reviewer inspected the sanitized forecast evidence.",
+        "sequence": 5,
+        "type": "review_started"
+      },
+      {
+        "actorId": "synthetic-actor-reviewer",
+        "evidenceIds": [
+          "synthetic-evidence-reported-eac",
+          "synthetic-evidence-actual-cost",
+          "synthetic-evidence-estimate-to-complete",
+          "synthetic-evidence-defensible-eac"
+        ],
+        "findingId": "synthetic-finding-forecast-contradiction",
+        "id": "synthetic-event-006",
+        "occurredAt": "2026-07-01T09:25:00.000Z",
+        "reason": "Reconciliation support was required for the submitted forecast.",
+        "sequence": 6,
+        "type": "remediation_requested"
+      },
+      {
+        "actorId": "synthetic-actor-preparer",
+        "evidenceIds": [
+          "synthetic-evidence-reported-eac",
+          "synthetic-evidence-actual-cost",
+          "synthetic-evidence-estimate-to-complete",
+          "synthetic-evidence-defensible-eac"
+        ],
+        "findingId": "synthetic-finding-forecast-contradiction",
+        "id": "synthetic-event-007",
+        "occurredAt": "2026-07-01T09:30:00.000Z",
+        "reason": "Synthetic preparer submitted a local-only remediation statement.",
+        "sequence": 7,
+        "type": "remediation_submitted"
+      },
+      {
+        "actorId": "synthetic-actor-reviewer",
+        "evidenceIds": [
+          "synthetic-evidence-reported-eac",
+          "synthetic-evidence-actual-cost",
+          "synthetic-evidence-estimate-to-complete",
+          "synthetic-evidence-defensible-eac"
+        ],
+        "findingId": "synthetic-finding-forecast-contradiction",
+        "id": "synthetic-event-008",
+        "occurredAt": "2026-07-01T09:35:00.000Z",
+        "reason": "The remediation was rejected because the forecast contradiction remained.",
+        "sequence": 8,
+        "type": "remediation_rejected"
+      },
+      {
+        "actorId": "synthetic-actor-approver",
+        "evidenceIds": [
+          "synthetic-evidence-reported-eac",
+          "synthetic-evidence-actual-cost",
+          "synthetic-evidence-estimate-to-complete",
+          "synthetic-evidence-defensible-eac"
+        ],
+        "findingId": null,
+        "id": "synthetic-event-009",
+        "occurredAt": "2026-07-01T09:40:00.000Z",
+        "reason": "The synthetic close remains blocked pending reconciled forecast evidence.",
+        "sequence": 9,
+        "type": "close_blocked"
+      }
+    ],
+    "remediationSummary": "A local-only remediation statement was submitted and rejected; remediation remains required.",
+    "reviewSummary": "The synthetic reviewer inspected the linked evidence and completed review of the blocker.",
+    "signedOff": false
+  }
+}

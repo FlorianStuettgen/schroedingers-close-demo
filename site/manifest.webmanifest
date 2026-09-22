@@ -1,0 +1,11 @@
+{
+  "name": "Schrödinger's Close · Sanitized showcase",
+  "short_name": "Close showcase",
+  "description": "Synthetic, sanitized, local static product demonstration.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#090b10",
+  "theme_color": "#090b10",
+  "icons": []
+}

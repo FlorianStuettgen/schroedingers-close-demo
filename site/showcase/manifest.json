@@ -1,0 +1,11 @@
+{
+  "bundle": {
+    "bundleId": "synthetic-close-may-june-2026",
+    "bytes": 11111,
+    "path": "bundle.json",
+    "schema": "schroedingers-close/showcase@1",
+    "sha256": "50ce67cbec2556d2b87b1398b1be8c7d9e693505ad41403bb013b2f368ea272b"
+  },
+  "generatedAt": "2026-07-01T12:00:00.000Z",
+  "schema": "schroedingers-close/showcase-manifest@1"
+}

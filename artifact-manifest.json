@@ -1,0 +1,36 @@
+{
+  "schema": "static-showcase-artifacts/v1",
+  "candidateManifestSha256": "9f688cb61dc7b92a7d3a9b9e299fa44a45a433f8370b7ff2b9ff6c5ef9aa59f2",
+  "files": [
+    {
+      "path": "assets/index-7UoHfm9e.css",
+      "bytes": 20366,
+      "sha256": "323efbf5540894ce7b390a97751c6bd70f073fa4d729d5aceaeac2a1cb8100d7"
+    },
+    {
+      "path": "assets/index-Cu4fGbjG.js",
+      "bytes": 223703,
+      "sha256": "d232019b6dc96e2bd8d41dfeae13483d2ff8d7e2bb8d7dc18b0f2889b4d577f5"
+    },
+    {
+      "path": "index.html",
+      "bytes": 955,
+      "sha256": "6bb7a6bab823e1f4cc21620bcffbbe62e20ada33e5ed9dab7651855005517f9e"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 312,
+      "sha256": "c18c94d355bcb24080adaebcdfd9e997440602560e25512e2c969d623c1d3aa8"
+    },
+    {
+      "path": "showcase/bundle.json",
+      "bytes": 11111,
+      "sha256": "50ce67cbec2556d2b87b1398b1be8c7d9e693505ad41403bb013b2f368ea272b"
+    },
+    {
+      "path": "showcase/manifest.json",
+      "bytes": 347,
+      "sha256": "34ec83be72b1ca89b0b1e43e9f8f31d31aabb40e45245e75629796e98bd9058e"
+    }
+  ]
+}
